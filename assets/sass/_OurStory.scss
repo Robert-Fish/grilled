@@ -1,0 +1,39 @@
+#OurStory {
+  padding: 100px 0;
+
+  .quote {
+    color: $paragraphColor;
+    margin-bottom: 3rem;
+    strong {
+      font-weight: 700;
+      color: $black;
+      font-style: italic;
+    }
+  }
+  .reserve-btn {
+    font-family: $displayFont;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 1px solid $black;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .video-img {
+    max-width: 400px;
+    height: 550px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0, #000 100%);
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0, #000 100%),
+      url("https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg?cs=srgb&dl=anise-aroma-art-277253.jpg&fm=jpg");
+    background-position: right;
+    background-size: cover;
+    margin: 0 auto;
+  }
+}

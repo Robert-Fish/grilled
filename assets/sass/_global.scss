@@ -1,0 +1,33 @@
+body {
+  color: $black;
+}
+
+h5 {
+  color: grey;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: $titleColor;
+}
+h2 {
+  font-size: 3rem;
+  font-family: $displayFont;
+  margin: 0.5rem 0 3rem;
+  text-transform: capitalize;
+  color: $black;
+}
+p {
+  font-size: 1.1rem;
+  color: $paragraphColor;
+  line-height: 1.8;
+  margin: 0.5rem 0 3rem;
+  font-weight: 300;
+}
+
+a {
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    color: red;
+  }
+}

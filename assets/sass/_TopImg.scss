@@ -1,0 +1,53 @@
+.topimg {
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0, #000 100%);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0, #000 100%),
+    url("https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?cs=srgb&dl=beef-cooking-delicious-769289.jpg&fm=jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  height: 100vh;
+
+  .title {
+    padding: 200px 0 80px;
+    text-align: right;
+    h5 {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 300;
+      font-size: 5rem;
+      font-family: $displayFont;
+    }
+  }
+  .contact-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 200px;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    strong {
+      font-weight: bold;
+      color: white;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+    .booking {
+      margin-bottom: 10px;
+      color: $paragraphColor;
+    }
+  }
+}
