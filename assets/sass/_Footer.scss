@@ -1,0 +1,36 @@
+.footer {
+  padding: 100px 0;
+  background: $footerBG;
+  width: 100%;
+  text-align: center;
+
+  nav {
+    display: inline-block;
+    margin: 0 auto 100px;
+
+    a {
+      color: white;
+      text-align: center;
+      display: inline-block;
+      padding: 10px 20px 10px 0;
+      text-decoration: none;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .social-media {
+    .fab {
+      color: white;
+      font-size: 1rem;
+    }
+    li {
+      display: inline-block;
+      padding: 20px;
+    }
+  }
+  .copyright {
+    color: white;
+  }
+}

@@ -1,0 +1,67 @@
+.ContactUs {
+  padding: 100px 0;
+  background: $greyBG;
+
+  h2,
+  h5 {
+    text-align: center;
+  }
+
+  .box {
+    background-color: #fff;
+    padding: 70px;
+    .city {
+      font-size: 2.7rem;
+      font-family: $displayFont;
+      margin-bottom: 2rem;
+    }
+    h6 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $titleColor;
+      line-height: 1.7;
+    }
+
+    p {
+      font-weight: 400;
+      strong {
+        color: $black;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+      a {
+        color: $paragraphColor;
+        text-decoration: none;
+        transition: all ease-in-out 0.3s;
+        font-weight: 600;
+        &:hover {
+          color: red;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .callUs {
+      font-size: 1.7rem;
+      color: $paragraphColor;
+      font-weight: 300;
+    }
+
+    .number {
+      font-size: 2.5rem;
+      font-weight: 500;
+      font-family: $displayFont;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .trading-hours {
+      margin-bottom: 1rem;
+      color: $paragraphColor;
+      line-height: 1.4;
+    }
+  }
+}

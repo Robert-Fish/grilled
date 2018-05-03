@@ -48,25 +48,37 @@ exports.default = App;
 
 var _hyperapp = __webpack_require__(0);
 
-var _Header = __webpack_require__(13);
+var _Header = __webpack_require__(15);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _TopImg = __webpack_require__(17);
+var _TopImg = __webpack_require__(20);
 
 var _TopImg2 = _interopRequireDefault(_TopImg);
 
-var _OurStory = __webpack_require__(14);
+var _OurStory = __webpack_require__(16);
 
 var _OurStory2 = _interopRequireDefault(_OurStory);
 
-var _SpecialMenu = __webpack_require__(16);
+var _SpecialMenu = __webpack_require__(19);
 
 var _SpecialMenu2 = _interopRequireDefault(_SpecialMenu);
 
-var _RandomQuote = __webpack_require__(15);
+var _RandomQuote = __webpack_require__(17);
 
 var _RandomQuote2 = _interopRequireDefault(_RandomQuote);
+
+var _ContactUs = __webpack_require__(13);
+
+var _ContactUs2 = _interopRequireDefault(_ContactUs);
+
+var _Reviews = __webpack_require__(18);
+
+var _Reviews2 = _interopRequireDefault(_Reviews);
+
+var _Footer = __webpack_require__(14);
+
+var _Footer2 = _interopRequireDefault(_Footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -82,7 +94,10 @@ function App(_ref) {
     (0, _hyperapp.h)(_OurStory2.default, { state: state, actions: actions }),
     "\\",
     (0, _hyperapp.h)(_SpecialMenu2.default, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions })
+    (0, _hyperapp.h)(_RandomQuote2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Reviews2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_ContactUs2.default, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Footer2.default, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
@@ -105,6 +120,200 @@ var globalState = exports.globalState = {
 /***/ }),
 /* 12 */,
 /* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ContactUs;
+
+var _hyperapp = __webpack_require__(0);
+
+function ContactUs(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { className: "ContactUs" },
+    (0, _hyperapp.h)(
+      "div",
+      { className: "container" },
+      (0, _hyperapp.h)(
+        "h5",
+        { className: "comp-title" },
+        "Contact Us"
+      ),
+      (0, _hyperapp.h)(
+        "h2",
+        null,
+        "Delicious Flavour of Autumnn"
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { className: "box" },
+        (0, _hyperapp.h)(
+          "div",
+          { className: "row" },
+          (0, _hyperapp.h)(
+            "div",
+            { className: "col-md-6" },
+            (0, _hyperapp.h)(
+              "div",
+              { className: "city" },
+              "Melbourne, Australia"
+            ),
+            (0, _hyperapp.h)(
+              "h6",
+              { className: "address" },
+              "25 King Street. ",
+              (0, _hyperapp.h)("br", null),
+              " Melbourne, VIC 124"
+            ),
+            (0, _hyperapp.h)(
+              "p",
+              null,
+              (0, _hyperapp.h)(
+                "strong",
+                null,
+                "email: "
+              ),
+              " ",
+              (0, _hyperapp.h)(
+                "a",
+                { href: "#" },
+                "test@email.com"
+              )
+            )
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { className: "col-md-6" },
+            (0, _hyperapp.h)(
+              "h6",
+              { className: "callUs" },
+              "Call Directly"
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { className: "number" },
+              "+61 0321 342 233"
+            ),
+            (0, _hyperapp.h)(
+              "h4",
+              null,
+              "Lunch Service:"
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { className: "trading-hours" },
+              "Friday, Saturday and Sunday. ",
+              (0, _hyperapp.h)("br", null),
+              "Bookings from 12pm"
+            ),
+            (0, _hyperapp.h)(
+              "h4",
+              null,
+              "Dinner Service:"
+            ),
+            (0, _hyperapp.h)(
+              "div",
+              { className: "trading-hours" },
+              "Daily Bookings from 6pm"
+            )
+          )
+        )
+      ),
+      (0, _hyperapp.h)("div", null)
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _hyperapp = __webpack_require__(0);
+
+function Footer(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "footer",
+    { className: "footer" },
+    (0, _hyperapp.h)(
+      "div",
+      { className: "container" },
+      (0, _hyperapp.h)(
+        "nav",
+        { className: "menu" },
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reservations"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Functions"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Contact"
+        ),
+        (0, _hyperapp.h)(
+          "a",
+          { href: "#" },
+          "Reviews & Media"
+        )
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { className: "social-media" },
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)("i", { className: "fab fa-facebook-f" })
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)("i", { className: "fab fa-instagram" })
+        ),
+        (0, _hyperapp.h)(
+          "li",
+          null,
+          (0, _hyperapp.h)("i", { className: "fab fa-twitter" })
+        )
+      ),
+      (0, _hyperapp.h)(
+        "div",
+        { className: "copyright" },
+        "\xA9 2018 Copyright "
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -168,7 +377,7 @@ function Header(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -241,7 +450,7 @@ function OurStory(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -282,7 +491,87 @@ function RandomQuote(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 16 */
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Reviews;
+
+var _hyperapp = __webpack_require__(0);
+
+function Reviews(_ref) {
+  var state = _ref.state,
+      actions = _ref.actions;
+
+  return (0, _hyperapp.h)(
+    "section",
+    { className: "reviews" },
+    (0, _hyperapp.h)(
+      "div",
+      { className: "container" },
+      (0, _hyperapp.h)(
+        "div",
+        { className: "row" },
+        (0, _hyperapp.h)(
+          "div",
+          { className: "col-md-6" },
+          (0, _hyperapp.h)(
+            "div",
+            { className: "side-img" },
+            (0, _hyperapp.h)("img", {
+              src: "http://africaluxurygroup.co.za/wp-content/uploads/2017/02/CHEFLEX-e1423898293993.png",
+              alt: ""
+            })
+          )
+        ),
+        (0, _hyperapp.h)(
+          "div",
+          { className: "col-md-6 " },
+          (0, _hyperapp.h)(
+            "h5",
+            { className: "comp-title" },
+            "Reviews"
+          ),
+          (0, _hyperapp.h)(
+            "h2",
+            null,
+            "The Food Network"
+          ),
+          (0, _hyperapp.h)(
+            "h4",
+            null,
+            "\"Best Restaurant in the L.A area!\""
+          ),
+          (0, _hyperapp.h)(
+            "p",
+            null,
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum, augue a imperdiet facilisis, magna arcu viverra magna, ac mollis mauris felis sed mi. Duis in semper purus. Suspendisse malesuada justo sodales ligula hendrerit tincidunt. Aliquam mollis augue sed dolor varius laoreet. Cras sagittis est eget elementum egestas."
+          ),
+          (0, _hyperapp.h)(
+            "div",
+            { className: "author" },
+            (0, _hyperapp.h)(
+              "strong",
+              null,
+              "Joe Bastion"
+            ),
+            " - winner of the chef masters"
+          )
+        )
+      )
+    )
+  );
+}
+// <Header state={state} actions={actions}/>
+// <Button state={state} actions={actions}/>
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -412,7 +701,7 @@ function SpecialMenu(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 17 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -487,7 +776,7 @@ function TopImg(_ref) {
 // <Button state={state} actions={actions}/>
 
 /***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -534,4 +823,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ })
-],[18]);
+],[21]);
