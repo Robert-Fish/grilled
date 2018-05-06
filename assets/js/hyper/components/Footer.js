@@ -4,6 +4,9 @@ export default function Footer({ state, actions }) {
   return (
     <footer className="footer">
       <div className="container">
+        <div className="logo">
+          <i className="fas fa-utensils" />
+        </div>
         <nav className="menu">
           <a href="#">Reservations</a>
           <a href="#">Functions</a>

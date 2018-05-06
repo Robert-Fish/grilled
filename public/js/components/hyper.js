@@ -266,6 +266,11 @@ function Footer(_ref) {
       "div",
       { className: "container" },
       (0, _hyperapp.h)(
+        "div",
+        { className: "logo" },
+        (0, _hyperapp.h)("i", { className: "fas fa-utensils" })
+      ),
+      (0, _hyperapp.h)(
         "nav",
         { className: "menu" },
         (0, _hyperapp.h)(
