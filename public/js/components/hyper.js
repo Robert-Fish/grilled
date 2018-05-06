@@ -113,8 +113,15 @@ function App(_ref) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var companyInfo = {
+  title: "Prime Steak Restaurant",
+  phone: "(478)-728-295",
+  location: "Melbourne, Australia"
+};
+
 var globalState = exports.globalState = {
-  count: 0
+  count: 0,
+  companyInfo: companyInfo
 };
 
 /***/ }),
@@ -799,11 +806,11 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _hyperapp.app)({
-  state: { globalState: _globalState.globalState },
+  state: _globalState.globalState,
   view: function view(state, actions) {
     return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
   },
-  root: document.getElementById('app'),
+  root: document.getElementById("app"),
   actions: _actions.actions,
   events: {
     action: function action(state, actions, _ref) {
